@@ -7,7 +7,7 @@ workflows:
           - certificate_credentials # <-- (CERTIFICATE_PRIVATE_KEY)
         vars:
           XCODE_PROJECT: "Path to the golden egg.xcodeproj"
-          XCODE_SCHEME: "project"
+          XCODE_SCHEME: "Path to the golden egg"
           BUNDLE_ID: "com.pathtogolden.egg"
           APP_STORE_APPLE_ID: 6746938970
         xcode: latest
