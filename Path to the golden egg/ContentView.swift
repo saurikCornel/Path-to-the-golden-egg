@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = WebViewModel(url: URL(string: "https://pathoglden.top/get/")!)
+    @StateObject private var viewModel = GViewModel(url: URL(string: "https://pathoglden.top/get/")!)
     
     var body: some View {
         ZStack {

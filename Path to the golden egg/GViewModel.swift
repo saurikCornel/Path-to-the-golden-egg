@@ -24,7 +24,7 @@ enum LoadingState: Equatable {
     }
 }
 
-final class WebViewModel: ObservableObject {
+final class GViewModel: ObservableObject {
     @Published private(set) var state: LoadingState = .idle
     @Published var isLoadingVisible: Bool = true
     let url: URL
@@ -87,9 +87,9 @@ final class WebViewModel: ObservableObject {
 }
 
 private class WebViewDelegate: NSObject, WKNavigationDelegate {
-    weak var owner: WebViewModel?
+    weak var owner: GViewModel?
     
-    init(owner: WebViewModel) {
+    init(owner: GViewModel) {
         self.owner = owner
     }
     

@@ -2,7 +2,7 @@ import SwiftUI
 import WebKit
 
 struct WebView: UIViewRepresentable {
-    @ObservedObject var viewModel: WebViewModel
+    @ObservedObject var viewModel: GViewModel
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
